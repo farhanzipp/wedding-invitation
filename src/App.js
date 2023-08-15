@@ -1,8 +1,9 @@
 import './style/App.css';
-import products from "./data/products.json";
-import Product from "./components/Product";
 import Navbar from './components/Navbar';
 import Opening from './components/Opening';
+import PageTwo from './components/PageTwo';
+import PageThree from './components/PageThree';
+import PageFour from './components/PageFour';
 
 function App() {
   return (
@@ -10,11 +11,9 @@ function App() {
       <Navbar />
       <main className="container text-center">
         <Opening />
-        <div >
-          {products.map((product) => (
-            <Product product={product} key={product.id} />
-          ))}
-        </div>
+        <PageTwo />
+        <PageThree />
+        <PageFour />
       </main>
       
     </div>
