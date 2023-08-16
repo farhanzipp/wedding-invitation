@@ -5,6 +5,7 @@ import PageTwo from './components/PageTwo';
 import PageThree from './components/PageThree';
 import PageFour from './components/PageFour';
 import Footer from './components/Footer';
+import PageFive from './components/PageFive';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <PageTwo />
         <PageThree />
         <PageFour />
+        <PageFive />
       </main>
       <Footer />
     </div>
