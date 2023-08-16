@@ -39,21 +39,32 @@ const CountdownTimer = ({ targetDate }) => {
   }, [calculateTimeLeft]);
 
   return (
-    <div className='flex mt-5 my-2 justify-center gap-5 '>
-      <div>
-        <span>{timeLeft.days}</span> 
+    <div className='mt-14 flex justify-center'>
+      <div className="flex flex-col gap-2 items-center w-14">
+        <p className='p-2 w-10 bg-pink-900 rounded-md font-semibold text-white'>
+          {timeLeft.days}
+        </p> 
         <p>hari</p>
       </div>
-      <div>
-        <span>{timeLeft.hours}</span>
+      
+      <div className="flex flex-col gap-2 items-center w-14">
+        <p className='p-2 w-10 bg-pink-900 rounded-md font-semibold text-white'>
+          {timeLeft.hours}
+        </p>
         <p>jam</p>
       </div>
-      <div>
-        <span>{timeLeft.minutes}</span>
+
+      <div className="flex flex-col gap-2 items-center w-14">
+        <p className='p-2 w-10 bg-pink-900 rounded-md font-semibold text-white'>
+          {timeLeft.minutes}
+        </p>
         <p>menit</p>
       </div>
-      <div>
-        <span>{timeLeft.seconds}</span>
+
+      <div className='flex flex-col gap-2 items-center w-14'>
+        <p className='p-2 w-10 bg-pink-900 rounded-md font-semibold text-white'>
+          {timeLeft.seconds}
+        </p>
         <p>detik</p>
       </div>
     </div>

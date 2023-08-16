@@ -4,18 +4,19 @@ import Opening from './components/Opening';
 import PageTwo from './components/PageTwo';
 import PageThree from './components/PageThree';
 import PageFour from './components/PageFour';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <main className="container text-center">
+      <main className="container mx-auto text-center">
         <Opening />
         <PageTwo />
         <PageThree />
         <PageFour />
       </main>
-      
+      <Footer />
     </div>
   );
 }
