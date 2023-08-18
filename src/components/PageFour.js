@@ -15,7 +15,7 @@ const PageFour = () => {
 
         <div className="w-4/5 mt-12 p-6 mx-auto rounded-lg">
           <h1 className="font-body text-xl font-semibold mb-7 text-pink-900">Ucapkan Sesuatu</h1>
-          <p className='text-md'>Berikan Ucapan dan Doa Restu</p>
+          <p className='text-md'>Berikan Ucapan dan Harapan Baik Pada Kami</p>
           <div className='mt-2 border-4 border-pink-900'>
             <div>Anggap ini ucapan</div>
           </div>
