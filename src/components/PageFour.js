@@ -1,6 +1,8 @@
 import { faGift } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import CommentSection from './CommentSection'
+import CommentForm from './CommentForm'
 
 const PageFour = () => {
   return (
@@ -19,6 +21,8 @@ const PageFour = () => {
           <div className='mt-2 border-4 border-pink-900'>
             <div>Anggap ini ucapan</div>
           </div>
+          <CommentSection />
+          <CommentForm />
         </div>
     </section>
   )
