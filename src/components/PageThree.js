@@ -1,7 +1,7 @@
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Fade } from 'react-awesome-reveal'
+import { Fade, Zoom } from 'react-awesome-reveal'
 import weddingData from '../data/wedding.json'
 
 const PageThree = () => {
@@ -11,8 +11,8 @@ const PageThree = () => {
     let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     let formattedWeddingDate = weddingDate.toLocaleDateString('id-ID', options);
     let formattedResepsiDate = resepsiDate.toLocaleDateString('id-ID', options);
-    let weddingHours = `${weddingDate.getHours()}:${weddingDate.getMinutes()}`;
-    const resepsiHours = `${resepsiDate.getHours()}:${resepsiDate.getMinutes()}`;
+    let weddingHours = `${weddingDate.getHours()}:${weddingDate.getMinutes().toString().padStart(2, '0')}`;
+    const resepsiHours = `${resepsiDate.getHours()}:${resepsiDate.getMinutes().toString().padStart(2, '0')}`;
   return (
     <section id="section-3" className="flex flex-col justify-center py-20 text-white bg-pink-900">
         <Fade>
@@ -33,9 +33,13 @@ const PageThree = () => {
         </Fade>
 
         <div className='w-3/5 mt-7 mx-auto'>
+          <Zoom>
             <button className="py-2 px-4 bg-orange-50 text-pink-900 rounded-full">
-              <p className='font-semibold'><FontAwesomeIcon icon={faLocationDot} /> Lokasi</p>
+              <a href= {weddingData.location_url} target="_blank" rel="noreferrer">
+                <p className='font-semibold'><FontAwesomeIcon icon={faLocationDot} /> Lokasi</p>
+              </a>
             </button>
+          </Zoom>
         </div>
     </section>
   )

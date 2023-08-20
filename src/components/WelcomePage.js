@@ -1,22 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const WelcomePage = ({ showWelcome, onHideWelcome }) => {
-  if (!showWelcome) {
-    return null;
+const WelcomePage = ({ onShowMain }) => {
+  const [showMain, setShowMain] = useState(false);
+
+  const handleShowMain = () => {
+    setShowMain(true);
+    onShowMain();
   }
+
+  if (!showMain) {
     return (
-        <div className='fixed top-0 left-0 w-full h-full flex items-center justify-center bg-sky-400 z-50'>
-            <div className="bg-white p-6 rounded shadow-xl">
-                <h1 className="text-xl font-semibold mb-4">Welcome to My App</h1>
-                <button
-                onClick={onHideWelcome}
-                className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                >
-                Get Started
-                </button>
-            </div>
+      <div className='fixed left-0 w-full h-screen flex items-center justify-center bg-pink-900 z-50 overflow-y-hidden'>
+          <div>
+            <button
+              onClick={handleShowMain}
+              className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+              >
+              Get Started
+            </button>
+          </div>
         </div>
   )
 }
+
+return null;
+};
 
 export default WelcomePage

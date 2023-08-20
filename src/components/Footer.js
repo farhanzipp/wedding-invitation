@@ -1,14 +1,17 @@
-import { faHeart } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
+import WAImg from '../assets/whatsapp.svg'
 
 const Footer = () => {
   return (
     <footer>
         <div className='flex flex-col justify-center items-center pt-5 pb-20'>
-            <p>Made with <FontAwesomeIcon icon={faHeart} /> by far</p>
+            <p>Digital invitation by far</p>
             <p>
-                <a href='/#'>Whatsapp</a>
+                <a href='/#' className='bg-pink-800'>
+                  <span>
+                  <img src={WAImg} alt='whatsapp' />
+                  </span>
+                </a>
             </p>
         </div>
     </footer>

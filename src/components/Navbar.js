@@ -4,7 +4,7 @@ import { faHouse, faHeart, faCalendarDays, faEnvelope } from '@fortawesome/free-
 
 const Navbar = () => {
   return (
-    <nav className="fixed bottom-3 w-full">
+    <nav className="fixed bottom-3 w-full z-49">
         <div className="w-1/2 mx-auto p-2 rounded-lg bg-orange-200 shadow-md md:w-2/5">
             <ul className="flex justify-between text-white text-center">
                 <li className='w-9 h-9 p-2 rounded-md bg-pink-800'>
