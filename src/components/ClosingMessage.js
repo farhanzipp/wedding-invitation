@@ -2,7 +2,7 @@ import React from 'react'
 import { Slide } from 'react-awesome-reveal'
 import weddingData from '../data/wedding.json'
 
-const PageFive = () => {
+const ClosingMessage = () => {
   return (
     <section id="section-3" className="flex flex-col justify-center py-2 bg-pink-900">
         <div className="w-5/6 mx-auto text-orange-200">
@@ -17,4 +17,4 @@ const PageFive = () => {
   )
 }
 
-export default PageFive
+export default ClosingMessage

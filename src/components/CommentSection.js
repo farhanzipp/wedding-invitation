@@ -49,9 +49,9 @@ const CommentSection = () => {
         ) : (
           <ul>
             {comments?.map((comment, index) => (
-              <li key={index} className="mb-2 p-2 text-left rounded-sm bg-white shadow-lg">
-                <p className="font-semibold">{comment.name}</p>
-                {comment.comment}
+              <li key={index} className="mb-2 p-3 text-left rounded-sm bg-white shadow-lg">
+                <p className="font-semibold text-sm">{comment.name}</p>
+                <p className='mt-1 text-xs'>{comment.comment}</p>
               </li>
             ))}
           </ul>

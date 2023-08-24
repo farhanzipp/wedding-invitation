@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import Opening from '../components/Opening';
-import PageTwo from '../components/PageTwo';
-import PageThree from '../components/PageThree';
-import PageFour from '../components/PageFour';
+import CoupleName from '../components/CoupleName';
 import Footer from '../components/Footer';
-import PageFive from '../components/PageFive';
 import WelcomePage from '../components/WelcomePage';
+import ClosingMessage from '../components/ClosingMessage';
+import WeddingDate from '../components/WeddingDate';
+import Comment from '../components/Comment';
 
 const Theme1 = () => {
     const [showMain, setShowMain] = useState(false);
@@ -20,10 +20,10 @@ const Theme1 = () => {
           {showMain && (
             <main className="container mx-auto text-center">
                 <Opening />
-                <PageTwo />
-                <PageThree />
-                <PageFour />
-                <PageFive />
+                <CoupleName /> 
+                <WeddingDate />
+                <Comment />
+                <ClosingMessage />
             </main>
           )}
         <Footer />

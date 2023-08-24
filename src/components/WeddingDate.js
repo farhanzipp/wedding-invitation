@@ -4,7 +4,7 @@ import React from 'react'
 import { Fade, Zoom } from 'react-awesome-reveal'
 import weddingData from '../data/wedding.json'
 
-const PageThree = () => {
+const WeddingDate = () => {
     const weddingDate = new Date(weddingData.wedding_date);
     const resepsiDate = new Date(weddingData.resepsi_date);
     // Format the timestamp as "DD Month YYYY"
@@ -45,4 +45,4 @@ const PageThree = () => {
   )
 }
 
-export default PageThree
+export default WeddingDate

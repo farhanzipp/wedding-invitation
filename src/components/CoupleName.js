@@ -3,7 +3,7 @@ import basmalahImg from '../assets/bismillahw.png'
 import { Fade } from 'react-awesome-reveal'
 import weddingData from '../data/wedding.json'
 
-const PageTwo = () => {
+const CoupleName = () => {
   return (
     <section id="section-2" className="flex flex-col mt-16 justify-center font-body bg-pink-900">
         <div className="p-8 text-white">
@@ -27,4 +27,4 @@ const PageTwo = () => {
   )
 }
 
-export default PageTwo
+export default CoupleName
